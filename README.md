@@ -33,6 +33,11 @@ Before running the application, ensure the following are installed:
 3. **Ollama:** To run the local LLM.
 
 ---
+ScreenShots:
+![img.png](img.png)
+![img_1.png](img_1.png)
+
+
 
 ## Ollama Setup
 1. Download the software from [Ollama's official site](https://ollama.com/download).
@@ -43,11 +48,11 @@ Before running the application, ensure the following are installed:
    ```
 4. Pull/download an LLM model to run with Ollama:
    ```bash
-   ollama pull qwen2.5
+   ollama pull deepseek-r1:1.5b
    ```
 5. Run the model:
    ```bash
-   ollama run qwen2.5
+   ollama run deepseek-r1:1.5b
    ```
 
 ---
