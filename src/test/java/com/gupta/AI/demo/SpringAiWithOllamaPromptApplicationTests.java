@@ -1,4 +1,4 @@
-package com.gupta.AI.Spring_Ai_with_Ollama_Prompt;
+package com.gupta.AI.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

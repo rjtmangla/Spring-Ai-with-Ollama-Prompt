@@ -1,13 +1,13 @@
-package com.gupta.AI.Spring_Ai_with_Ollama_Prompt;
+package com.gupta.AI.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringAiWithOllamaPromptApplication {
+public class SpringAiDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringAiWithOllamaPromptApplication.class, args);
+		SpringApplication.run(SpringAiDemoApplication.class, args);
 	}
 
 }
