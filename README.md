@@ -1,67 +1,91 @@
 # Spring-Ai-with-Ollama-Prompt
-### Purpose
-To create a demo project to use Spring AI to connect with locally deployed Large Language Models. 
+
+## Purpose
+This project demonstrates how to use Spring AI to connect with locally deployed Large Language Models (LLMs).
 
 ---
 
-### What is Spring AI, LLM and Ollama?
-#### Spring AI 
-Java based application framework for AI based applications. Using Spring AI framework, we can create applications of generative AI using java language. This provides support for OpenAI, Bedrock, Ollama, DeepSeek AI etc.
+## What are Spring AI, LLM, and Ollama?
 
-#### What is Large Language Model(LLM)?
-LLM is a type of model designed to process and generate human-like text based on training data. They are trained on billions of words from various sources(books, articles, websites). They can generate new data.
+### Spring AI
+Spring AI is a Java-based application framework for building AI-powered applications. It enables developers to integrate generative AI into Java applications and supports various AI providers, including OpenAI, Bedrock, Ollama, and DeepSeek AI.
 
-#### What is Ollama?
-Ollama is a software to run open source llm locally. This tool will not need internet to run the llm model.
+### What is a Large Language Model (LLM)?
+A Large Language Model (LLM) is an AI model designed to process and generate human-like text based on vast amounts of training data. These models are trained on billions of words from diverse sources such as books, articles, and websites. They can generate text, answer questions, and perform various NLP tasks.
+
+### What is Ollama?
+Ollama is a software tool that allows users to run open-source LLMs locally. It enables AI processing without requiring an internet connection.
 
 ---
-### Features
-1. Integrate with locally running LLM model using ollam.
-2. A UI page for prompt search.
-3. Integrate LLM using Spring AI(Java based) framework.
----
-### Prerequisites
-Before running the application, please ensure you have these application installed:
-1. Backend: Java 17+, Maven
-2. An IDE (I am using Intellij)
-3. Ollama
----
-### Ollama Setup
-1. Download software using this link. https://ollama.com/download
-2. Install into the sytem.
-3. Go to command line and type "ollama --version"
-4. Pull/download LLM model to run on ollama. Command "ollama pull qwen2.5".
-5. Run the model. "ollama run qwen2.5"
 
+## Features
+1. Integration with a locally running LLM using Ollama.
+2. A user interface for prompt-based searches.
+3. LLM integration using the Spring AI (Java-based) framework.
+
+---
+
+## Prerequisites
+Before running the application, ensure the following are installed:
+
+1. **Backend:** Java 17+ and Maven.
+2. **An IDE:** IntelliJ IDEA (or any preferred Java IDE).
+3. **Ollama:** To run the local LLM.
+
+---
+
+## Ollama Setup
+1. Download the software from [Ollama's official site](https://ollama.com/download).
+2. Install it on your system.
+3. Verify the installation by running:
+   ```bash
+   ollama --version
+   ```
+4. Pull/download an LLM model to run with Ollama:
+   ```bash
+   ollama pull qwen2.5
+   ```
+5. Run the model:
+   ```bash
+   ollama run qwen2.5
+   ```
+
+---
 
 ## Getting Started
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/rjtmangla/Spring-Ai-with-Ollama-Prompt.git
-cd Spring-Ai-with-Ollama-Prompt
+git clone https://github.com/rjtmangla/Spring-AI-with-Ollama-Prompt.git
+cd Spring-AI-with-Ollama-Prompt
 ```
 
 ### 2. Build the Project
 Use Maven to clean and build the project:
-
 ```bash
-Copy code
 mvn clean install
 ```
 
 ### 3. Run the Application
-Start the application 
+Start the application:
+```bash
+mvn spring-boot:run
+```
 
 ### 4. Access the Application
-Once the application is running, access web interface at:
+Once the application is running, open your browser and visit:
 ```
 http://localhost:8080
 ```
 
+---
+
 ## Folder Structure 🗂️
-- src/main/java: Contains the source code for the application.
-    - com.gupta.AI.demo.SpringAiDemoApplication: Starter file for prject.
-    - controller: REST controllers for API endpoints.
-    - service: Business logic for AI functionalities.
-- src/main/resources: Configuration files, templates, and static resources.
+```
+Spring-AI-with-Ollama-Prompt/
+│── src/main/java
+│   ├── com.gupta.ai.demo.SpringAiDemoApplication  # Main application starter
+│   ├── controller  # REST controllers for API endpoints
+│   ├── service  # Business logic for AI functionalities
+│── src/main/resources  # Configuration files, templates, and static resources
+```
