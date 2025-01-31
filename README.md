@@ -54,7 +54,7 @@ mvn clean install
 Start the application 
 
 ### 4. Access the Application
-Once the application is running, access the APIs or web interface at:
+Once the application is running, access web interface at:
 ```
 http://localhost:8080
 ```
